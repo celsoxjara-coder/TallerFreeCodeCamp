@@ -29,7 +29,9 @@ p {
     flex-wrap: wrap;
     border: 2px solid black;
     padding: 10px;
+    
 }
+
 
 .pricing-card {
     display: flex;
@@ -38,9 +40,16 @@ p {
     flex: 0 0 200px;
     border: 2px solid black;
     border-radius: 5px;
-    margin: 5px;
+    margin: 10px;
     background-color: rgb(218, 242, 255);
+    transition: all 0.3s ease-in-out;
 }
+
+.pricing-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
 
 ul {
     display: block;
@@ -49,7 +58,7 @@ ul {
 li {
     list-style-type: none;
     margin: 8px 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
     display: list-item;
     text-align: left;
 }
@@ -79,4 +88,19 @@ li .cross {
     order: 2;
 }
 
+.select-plan-button {
+    background-color: rgb(91, 103, 230);
+    color: rgb(8, 2, 2);
+    border: none;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+.select-plan-button:hover {
+    background-color: rgb(65, 75, 170);
+}   
