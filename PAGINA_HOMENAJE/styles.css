@@ -2,4 +2,79 @@
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto;
+}
+
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#title {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #666;
+}
+
+#img-caption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 5px;
+    color: #555;
+}
+
+#tribute-info {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #444;
+    background-color: #f1e5fd;
+    padding: 15px;
+    border-radius: 8px;  
+}   
+
+h3 {
+    text-align: center;
+    color: #222;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6em;
+}
+
+ul {
+    list-style-type: none; /* es raro pero es como contar; aqui borramos los puntos por defecto */
+    padding-left: 0;
+}
+
+li {
+    position: relative; /*esto hace que podamos mover el contenedor de li*/
+    padding-left: 30px; /*empujamos el contendero a la derecha creando un relleno que permite colocar el punto personalizado*/
+    margin-bottom: 10px;
+}
+
+li::before {
+    content: ""; /* le indicas a css que aquí hay un elemento */
+    position: absolute; /* gracias a ::before hemos creado un espacio al mismo tiempo que un contenedor, así que lo posicionamos absolutamente respecto al contenedor li */
+    left: 0;
+    top: 5px;
+    
+    /* Aquí moldeas la forma */
+    width: 10px;
+    height: 10px;
+    background-color: #551c76; /* Un morado más fuerte */
+    border-style: solid;
+    border-radius: 12px 12px 0 12px; /* bordes redondeados */
+    border-color: #5f0a91;
+    border-width: 2px 2px 2px 2px;
+
+    display: inline-block;
+    transform: rotate(45deg);   
+
+      
 }
