@@ -97,7 +97,7 @@ body {
 .cat-left-inner-eye {
   position: absolute;
   top: 8px;
-  left: 2px;
+  left: 18px;
   width: 10px;
   height: 20px;
   transform: rotate(10deg);
@@ -108,7 +108,7 @@ body {
 .cat-right-inner-eye {
   position: absolute;
   top: 8px;
-  left: 18px;
+  left: 1px;
   transform: rotate(-5deg);
   width: 10px;
   height: 20px;
@@ -126,7 +126,7 @@ body {
   transform: rotate(180deg);
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-bottom: 20px solid #442c2c;
+  border-bottom: 20px solid #172f68;
 }
 
 .cat-mouth div {

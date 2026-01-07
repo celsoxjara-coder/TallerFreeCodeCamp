@@ -31,7 +31,7 @@ tr[class="to-read"] span[class="status"] {
 
 span[class="status"], span[class^="rate"] {
     height: 100%;
-    width: 80%;
+    width: 70px;
     padding: 5px;
 }
 
